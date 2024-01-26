@@ -1,0 +1,2 @@
+Which out of the two components (which are performing the same functionality) is performing better and how?
+Ans: The pure component, which extends `React.PureComponent` and automatically performs a shallow comparison in its `shouldComponentUpdate` method, generally performs better than a simple component for frequent renders by avoiding unnecessary re-renders. The shallow comparison helps prevent re-rendering when props and state remain unchanged.
